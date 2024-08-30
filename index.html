@@ -19,9 +19,9 @@
   <main>
     <section>
       <h3>Fire and Ice:</h3>
-      <button>🔥</button>
-      <button>❄️</button>
-      <div>
+      <button id="fire-butt" onClick="fireEmj(event)">🔥</button>
+      <button id="ice-butt" onClick="iceEmj(event)">❄️</button>
+      <div id="emoji-farm">
         <!-- fire and ice emojis go here -->
       </div>
     </section>
@@ -29,13 +29,13 @@
     <section>
       <h3>Create an Affirmation:</h3>
       <form>
-        <input
+        <input id = "affirm-input"
           placeholder="Affirmation"
           type="text">
-        <input
+        <input id= "author-input"
           placeholder="Author"
           type="text">
-        <button>Submit</button>
+        <button id="sub-butt" onClick="grabValue(event)">Submit</button>
       </form>
     </section>
     
@@ -48,19 +48,7 @@
             <th>Affirmation Author</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>You probably got this!</td>
-            <td>Oscar</td>
-          </tr>
-          <tr>
-            <td>You definitely got this!</td>
-            <td>Elmo</td>
-          </tr>
-          <tr>
-            <td>Don't forget to delete these three hardcoded table rows!</td>
-            <td>Abby Cadabby</td>
-          </tr>
+        <tbody id="tbody-id">
         </tbody>
       </table>
     </section>
